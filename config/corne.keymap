@@ -1,7 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/rgb.h>
 
@@ -120,12 +119,7 @@
     mouse_layout: mouse_layout {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
-      bindings =
-        <&macro_press>,
-        <&kp LA(LS(KP_NUMLOCK)) &to 4>,
-        <&macro_release>,
-        <&kp LA(LS(KP_NUMLOCK)) &to 0>;
-
+      bindings = <&kp LA(LS(KP_NUMLOCK)) &to 4>;
       label = "MOUSE_LAYOUT";
     };
   };
@@ -175,7 +169,7 @@
 
     layer_4 {
       bindings = <
-&trans  &trans  &trans        &kt NUMBER_8  &trans        &trans    &trans    &trans    &trans    &trans  &trans  &trans
+&trans  &trans  &trans        &kp NUMBER_8  &trans        &trans    &trans    &trans    &trans    &trans  &trans  &trans
 &trans  &trans  &kp NUMBER_4  &kp NUMBER_2  &kp NUMBER_6  &trans    &trans    &trans    &trans    &trans  &trans  &trans
 &trans  &trans  &trans        &trans        &trans        &trans    &trans    &trans    &trans    &trans  &trans  &trans
                               &trans        &trans        &trans    &mkp MB1  &mkp MB2  &mkp MB3
