@@ -116,6 +116,20 @@
     };
   };
 
+  macros {
+    mouse_layout: mouse_layout {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings =
+        <&macro_press>,
+        <&kp LA(LS(KP_NUMLOCK)) &to 4>,
+        <&macro_release>,
+        <&kp LA(LS(KP_NUMLOCK)) &to 0>;
+
+      label = "MOUSE_LAYOUT";
+    };
+  };
+
   keymap {
     compatible = "zmk,keymap";
 
