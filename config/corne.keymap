@@ -63,11 +63,6 @@
       key-positions = <28 29>;
     };
 
-    Enter {
-      bindings = <&kp ENTER>;
-      key-positions = <16 17>;
-    };
-
     To_Layer1 {
       bindings = <&to 0>;
       key-positions = <0 1>;
