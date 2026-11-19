@@ -89,7 +89,7 @@
       key-positions = <0 4>;
     };
 
-    enter {
+    R_ENTER {
       bindings = <&kp ENTER>;
       key-positions = <19 18>;
     };
