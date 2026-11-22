@@ -93,11 +93,6 @@
       bindings = <&kp ENTER>;
       key-positions = <19 20>;
     };
-
-    l1 {
-      bindings = <&mo 1>;
-      key-positions = <37 24>;
-    };
   };
 
   keymap {
